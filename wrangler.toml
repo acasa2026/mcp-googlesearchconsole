@@ -1,0 +1,15 @@
+name = "mcp-googlesearchconsole"
+main = "src/index.ts"
+compatibility_date = "2025-05-01"
+
+[vars]
+# Sitemap write tools are off unless this is "true". When false the Worker also
+# requests the read-only Google scope, so it cannot modify anything at all.
+ENABLE_WRITES = "false"
+
+# Nothing secret belongs in this file. Set these in the Cloudflare dashboard
+# under Settings, Variables and Secrets:
+#   GOOGLE_CLIENT_EMAIL  client_email from the service account JSON
+#   GOOGLE_PRIVATE_KEY   private_key from the service account JSON
+#   MCP_TOKEN            required, this endpoint has no other protection
+#   ALLOWED_SITES        optional, comma separated property identifiers

@@ -1,0 +1,16 @@
+node_modules/
+.wrangler/
+dist/
+out/
+.dev.vars
+.env
+.env.*
+
+# Service account keys. Never commit one.
+*.json.key
+service-account*.json
+*-key.json
+credentials.json
+*.pem
+
+.DS_Store
